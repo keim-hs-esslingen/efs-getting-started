@@ -28,14 +28,14 @@ Open the pom.xml and insert the following parent-tag and dependencies:
 
 ```xml
 <parent>
-    <groupId>com.github.keim-hs-esslingen</groupId>
+    <groupId>com.github.keim-hs-esslingen.efs</groupId>
     <artifactId>efs-parent-starter</artifactId>
     <version>1.0.0</version>
 </parent>
 
 <dependencies>
     <dependency>
-        <groupId>com.github.keim-hs-esslingen</groupId>
+        <groupId>com.github.keim-hs-esslingen.efs</groupId>
         <artifactId>middleware-core</artifactId>
     </dependency>
 </dependencies>
