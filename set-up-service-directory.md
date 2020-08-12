@@ -85,3 +85,65 @@ public class ServiceDirectoryApplication {
 ```
 
 Having done this, you Service-Directory is ready to be launched.
+
+---
+
+## Swagger-UI Setup
+
+If you want your Service-Directory to generate a Swagger-UI, add the following dependencies to your pom.xml:
+
+```xml
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+</dependency>
+```
+
+The Swagger-UI will be available at http://localhost:9900/swagger-ui.html, as soon as you restart your Service-Directory.
+However, if you do not provide some extra configuration for Swagger, some of the spring controllers of eureka that are not relevant for direct usage will be visible in the Swagger-UI as well. To prevent this, add the following configuration class to your project:
+
+```java
+import java.util.Collections;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
+import springfox.documentation.service.Tag;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                // The package of the service-directorys controllers that provide the REST-APIs
+                .apis(RequestHandlerSelectors.basePackage("de.hsesslingen.keim.efs.servicedirectory.controller"))
+                .paths(PathSelectors.any())
+                .build()
+                // Define proper tags for the API
+                .tags(new Tag("Search Api", "Search for available services using filter criteria"),
+                        new Tag("Service Api", "Service related API with CRUD functionalities"))
+                .apiInfo(apiInfo());
+    }
+
+    private ApiInfo apiInfo() {
+        // Make some general API info
+        return new ApiInfo("Service Directory",
+                "API description of Service Directory", "V1.0.1", null,
+                new Contact("My Company", "https://whatever", null),
+                null, null, Collections.emptyList());
+    }
+
+}
+```
