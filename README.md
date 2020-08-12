@@ -10,9 +10,9 @@ To understand how you can setup a middleware on your own, that represents such a
 
 Assuming you have read this document, you can start following one of the linked guides to creating your own middleware components.
 
+1. [Setting up a Service-Directory](./set-up-service-directory.md)
 1. [Making a Provider-Adapter-Service](./make-a-provider-adapter-service.md)
-2. [Setting up a Service-Directory](./set-up-service-directory.md)
-3. [Making your own Consumer-Service](./make-your-own-consumer-service.md)
+1. [Making your own Consumer-Service](./make-your-own-consumer-service.md)
 
 If you aim to create you own Middleware network, that has a Service-Directory, Provider-Adapter-Services and one or more Consumer-Services, it's probably best to start with 1. and continue down the list in the written order.
 

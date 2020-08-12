@@ -30,7 +30,8 @@ Open the pom.xml and insert the following parent-tag and dependencies:
 <parent>
     <groupId>com.github.keim-hs-esslingen.efs</groupId>
     <artifactId>efs-parent-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+    <relativePath/> <!-- skip parent lookup in parent directory. -->
 </parent>
 
 <dependencies>
@@ -42,7 +43,7 @@ Open the pom.xml and insert the following parent-tag and dependencies:
 ```
 The parent POM contains information about which versions the required dependencies need to have, so you only need to worry about setting the version number of the parent project.
 
-The middleware-core components are build around the Spring Boot framework. The framework is already included in middleware-core as a transitive dependency. However you still need to provide your own configuration using an application.yml file.
+The middleware-core component is built around the Spring Boot framework. The framework is already included in middleware-core as a transitive dependency. However you still need to provide your own configuration using an application.yml file.
 
 ## application.yml
 
