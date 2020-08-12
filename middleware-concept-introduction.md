@@ -9,8 +9,10 @@ In the following picture you see a fictional middleware that connects various pl
 
 ![High-level diagram of a fictional middleware network.](./img/Middleware-High-Level.svg)
 
-As you can see there is a central component in the middleware, called the service-directory, that all other components are connected to. This service-directory, as the name already suggests, serves as a registry for all mobility services that are provided by the mobility-service-providers within this middleware network. The service-directory provides an API for registering such services as well as for querying the registry. The consumers in the middleware use this API to search for mobility providers that match their needs.
+The picture contains four rectangles with various colors and a green circle. They all represent actors in the middleware. **Red** means, this actor soley acts as a mobility service provider, that offers services to other actors. **Blue** means, the actor soleys acts as a mobility service consumer, consuming the services offered by the providers. **Purple** means, the actor both acts as a provider and a consumer. The **green** circle in the middle named **Service-Directory** has a special role.
 
-If a provider joins the middleware-network it only needs to register it's mobility service at the service-directory to be discoverable for potential consumers.
+This Service-Directory, as the name already suggests, serves as a registry for all mobility services that are offered by the providers within this middleware network. It provides an API for registering such services as well as for querying the registry. The consumers in the middleware use this API to search for mobility providers that match their needs.
 
+If a provider joins the middleware-network it only needs to register it's mobility service at the Service-Directory to be discoverable for potential consumers (visualized by the red dashed arrows). Consumers query the Service-Directory as much as they need to find matching mobility providers and then contact those providers directly to communicate with them (visualized by the blue arrows).
 
+This is the basic concept of the EFS-middleware.
