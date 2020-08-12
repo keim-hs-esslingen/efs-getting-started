@@ -9,8 +9,8 @@ This guide assumes the following:
 **Table of Contents:**
 
 1. [Create a new maven project](#Create-a-new-maven-project)
-1. [pom.xml](#pom.xml)
-1. [application.yml](#application.yml)
+1. [pom.xml](#pomxml)
+1. [application.yml](#applicationyml)
 1. [Configuring the Consumer-API](#Configuring-the-Consumer-API)
     1. [Using the Consumer-REST-API](#Using-the-Consumer-REST-API)
     1. [Using the middleware-core as a library](#Using-the-middleware-core-as-a-library)
