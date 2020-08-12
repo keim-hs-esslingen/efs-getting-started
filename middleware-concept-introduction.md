@@ -16,3 +16,15 @@ This Service-Directory, as the name already suggests, serves as a registry for a
 If a provider joins the middleware-network it only needs to register it's mobility service at the Service-Directory to be discoverable for potential consumers (visualized by the red dashed arrows). Consumers query the Service-Directory as much as they need to find matching mobility providers and then contact those providers directly to communicate with them (visualized by the blue arrows).
 
 This is the basic concept of the EFS-middleware.
+
+## Multiple Middleware instances
+
+While the ultimate goal of the EFS-project is to create a single decentralized platform for sharing mobility services with each other, this goal is not achievable in the context of this project, simply because it's too complex and huge to tackle it at once.
+
+Therefore the EFS project aims at making the first steps towards a decentralized open platform for this purpose by providing a prototype of it, that can easliy be set up in a non-public environment and secured and run in individual setups. Currently it is therefore possible to have many instances of middleware networks that are totally isolated from each other. In fact everybody can setup his or her own middleware network. You will though need to develop your own adapters for the components and mobility service providers that shall be part of it.
+
+The middleware that is used in the EFS-project is not open for public but is restricted to the city of Heidelberg which is a partner in this project.
+
+To make it easier for you to start setting up your own middleware-network, a couple of guides were created the walk you through the steps of developing your own components that make use of our provided middleware components, which are able to communicate as described above. Your part is to adapt these components to your interfaces, our part is to make the platform communication work.
+
+See the main [README.md](./README.md) for more details on these guides.
