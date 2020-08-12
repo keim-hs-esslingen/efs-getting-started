@@ -8,7 +8,11 @@ This guide assumes the following:
 - You have experience with building micro services using the Spring Boot framework.
 
 **Table of Contents:**
-TODO
+1. [Create a new maven project](#create-a-new-maven-project)
+1. [pom.xml](#pom.xml)
+1. [application.yml](#application.yml)
+1. [ServiceDirectoryApplication.java](#servicedirectoryapplication.java)
+1. [Swagger-UI Setup](#Swagger-UI-Setup)
 
 
 
