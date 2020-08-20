@@ -1,10 +1,10 @@
-# How to make your own Consumer-Service
+# Create an instance of a Consumer-Adapter:
 
 This guide assumes the following:
 
 - You have basic understanding of the EFS-middleware concept. If you think this guide is hard to understand it might be helpful to read the [introduction](./middleware-concept-introduction.md) to the EFS-middleware first.
 - You have experience with building micro services using the Spring Boot framework.
-- You have an instance of a service-directory that you can connect to, either by setting it up yourself or by connecting to an existing one.
+- You have an instance of a middleware-network that you can connect to, either by setting it up yourself or by connecting to an existing one.
 
 **Table of Contents:**
 
@@ -15,8 +15,6 @@ This guide assumes the following:
     1. [Using the Consumer-REST-API](#Using-the-Consumer-REST-API)
     1. [Using the middleware-core as a library](#Using-the-middleware-core-as-a-library)
 1. [Swagger-UI Setup](#Swagger-UI-Setup)
-
-
 
 ## Create a new maven project
 
@@ -29,8 +27,8 @@ Open the pom.xml and insert the following parent-tag and dependencies:
 ```xml
 <parent>
     <groupId>com.github.keim-hs-esslingen.efs</groupId>
-    <artifactId>efs-parent-starter</artifactId>
-    <version>1.0.1</version>
+    <artifactId>efs-service-parent</artifactId>
+    <version><!-- Let maven tell you which one is the latest! --></version>
     <relativePath/> <!-- skip parent lookup in parent directory. -->
 </parent>
 
@@ -53,7 +51,7 @@ Create and/or open your application.yml file and add the following properties to
 # Define a name for your service
 service-name: demo-consumer
 
-# Put the base-url of your service-directory here.
+# Insert the base-url of the service-directory, that you want to connect to.
 service-directory-base-url: http://localhost:9900/
 
 spring.application.name: ${service-name}
