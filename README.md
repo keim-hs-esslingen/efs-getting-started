@@ -4,7 +4,7 @@ This document is a guideline to get started with developing your own components 
 
 Since making a fully decentralized platform that integrates with services of external providers involves dealing with a big amount of stakeholders with varying interests, the EFS-project is only a first step towards moving to such a decentralized platform. Getting the whole thing to run is just to big for us at the moment.
 
-The EFS-middleware therefore is not really a decentralized platform. In the current setup it actually is a centralized network of components that allows translating the APIs of external providers to a standardized mobility API, which makes integrating external services much easier. At least thats the goal.
+The EFS-middleware therefore is not really a decentralized platform. In the current setup is actually is a centralized network of components that allows translating the APIs of external providers to a standardized mobility API, which makes integrating external services much easier. At least thats the goal.
 
 To understand how you can setup a middleware on your own, that represents such a network, it is helpful to read the [middleware concept introduction](./middleware-concept-introduction.md), that gives a high level overview about how the middleware network is set up and how the components of it communicate with each other.
 
