@@ -1,3 +1,5 @@
+# Use the middleware core library to create a consumer adapter service
+
 This guide assumes the following:
 
 - You have basic understanding of the EFS-middleware concept. If you think this guide is hard to understand it might be helpful to read the [introduction](Introduction-to-the-Middleware-concept.md) to the EFS-middleware first.
