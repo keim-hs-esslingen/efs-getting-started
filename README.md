@@ -14,7 +14,7 @@ Assuming you have read that document, you can start following one of the linked 
 
 ## Guides
 
-1. [Connect to an existing Middleware-Network as a consumer](connect-to-an-existing-middleware-network-as-a-consumer)
+1. [Connect to an existing Middleware-Network as a consumer](Connect-to-an-existing-Middleware-network-as-a-consumer.md)
 1. Connect to an existing Middleware-Network as a provider (TBD)
 1. Setting up your own Middleware-Network (TBD)
 

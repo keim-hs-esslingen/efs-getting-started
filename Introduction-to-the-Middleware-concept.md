@@ -6,7 +6,7 @@ First of all, what is *the* middleware? What we call the middleware is not a par
 
 In the following picture you see a fictional middleware that connects various players together in one network making them able to communicate with each other:
 
-![High-level diagram of a fictional middleware network.](https://raw.githubusercontent.com/keim-hs-esslingen/efs-getting-started/master/img/Middleware-High-Level.svg)
+![High-level diagram of a fictional middleware network.](img/Middleware-High-Level.svg)
 
 The picture contains four rectangles with various colors and a green circle. They all represent actors in the middleware. **Red** means, this actor soley acts as a mobility service provider, that offers services to other actors. **Blue** means, the actor soleys acts as a mobility service consumer, consuming the services offered by the providers. **Purple** means, the actor both acts as a provider and a consumer. The **green** circle in the middle named **Service-Directory** has a special role.
 
@@ -26,4 +26,4 @@ The middleware that is used in the EFS-project is not open for public but is res
 
 To make it easier for you to start setting up your own middleware-network, a couple of guides were created the walk you through the steps of developing your own components that make use of our provided middleware components, which are able to communicate as described above. Your part is to adapt these components to your interfaces, our part is to make the platform communication work.
 
-See the [main page](Getting-Started-with-the-EFS-Middleware) for more details on these guides.
+See the [main page](README.md) for more details on these guides.
