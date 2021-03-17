@@ -6,12 +6,12 @@ This document gives an introduction to the APIs used in the Middleware networks.
 
 Within a middleware network there are a handful of APIs that can be communicated with:
 
-- The **[Services-API](#Services-API)** is used to register mobility service providers at a service directory.
-- The **[Search-API](#Search-API)** is used to search for mobility service providers in a service directory.
-- The **[Options-API](#Options-API)** is used to search for mobility options.
-- The **[Booking-API](#Booking-API)** is used to book mobility options.
-- The **[Credentials-API](#Credentials-API)** is used to generate tokens and credentials that are sometimes needed for using the Booking-API and/or Options-API.
-- The **[Consumer-API](#Consumer-API)** is a special API that wraps some of the other APIs, which we'll get to later.
+- The **[Services-API](#services-api)** is used to register mobility service providers at a service directory.
+- The **[Search-API](#search-api)** is used to search for mobility service providers in a service directory.
+- The **[Options-API](#options-api)** is used to search for mobility options.
+- The **[Booking-API](#booking-api)** is used to book mobility options.
+- The **[Credentials-API](#credentials-api)** is used to generate tokens and credentials that are sometimes needed for using the Booking-API and/or Options-API.
+- The **[Consumer-API](#consumer-api)** is a special API that wraps some of the other APIs, which we'll get to later.
 
 Let's go over them step by step. If you only need information about a particular API you can use their link to jump to their chapter immediately.
 
